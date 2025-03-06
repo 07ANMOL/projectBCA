@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href="cryptoCalc.css">
+</head>
+<body>
+    <div class = "list">
+        <ul>
+            <li>1 USD = 87 INR</li>
+            <li>1 POUND = 112 INR</li>
+            <li>1 AUD = 87 INR</li>
+            <li>1 USD = 87 INR</li>
+            <li>1 CAD= 60.07 INR</li>
+            <li>1 CNY = 12.01 INR</li>
+        </ul>
+    </div>
+    <div class ="box">
+    <div class ="calc">
+        <h1 id ="head">CRYP-CALC</h1>
+        <form>
+            <input type="number" placeholder="Enter crypto amt.">
+    </div>
+    <div class ="buttons">
+        <label> From:</label>
+        <select id ="from">
+        <option value ="btc">BTC</option>
+        <option value ="jiocoin">JIOCOIN</option>
+        <option value ="pi">PI</option>
+    </select>
+    <label> To:</label>
+    <select id ="to">
+        <option value="indian rupee">INR</option>
+        <option value="american dollar">USD</option>
+        <option value="australlian dollar">AUD</option>
+        <option value="euro">EUR</option>
+        <option value="kuwaiti dinar">KWD</option>
+        <option value="omani rial">OMR</option>
+    </select>
+    </div>
+    <div class ="result">
+        <button id ="btn" onclick="mybtn()">Result</button>
+    </div>
+    <div class="country-list">
+</form>
+</div>
+</body>
+</html>
