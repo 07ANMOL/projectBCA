@@ -5,6 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel = "stylesheet" href="cryptoCalc.css">
+    <style>
+        @keyframes run {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .header, .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .running-words {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .running-words span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: run 10s linear infinite;
+        }
+
+        body {
+            padding-top: 60px; 
+            padding-bottom: 40px;
+        }
+    </style>
 </head>
 <body>
     <div class = "list">
@@ -43,8 +85,17 @@
     <div class ="result">
         <button id ="btn" onclick="mybtn()">Result</button>
     </div>
-    <div class="country-list">
 </form>
 </div>
+<script>
+    function mybtn(){
+        alert("HOOLA Crypto Converted !")
+    }
+</script>
+<footer class="footer">
+    <div class="running-words">
+        <span class>&#128640; Crypto IS The Future Of Currencies 😊 &#128640;</span>
+    </div>
+</footer>
 </body>
 </html>

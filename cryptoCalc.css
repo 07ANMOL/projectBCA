@@ -10,8 +10,9 @@ body {
 }
 
 .box {
-    background-color: #d6d5d4;
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
+    border-color: #f9f518;
     border-radius: 10px;
     margin-left: 50px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -28,14 +29,14 @@ body {
 
 #head {
     font-size: 2em;
-    color: #333333;
+    color: #f80b0b;
     margin-bottom: 20px;
 }
 
 input[type="number"] {
     width: calc(100% - 22px);
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 3px solid #f50808;
     border-radius: 5px;
     margin-bottom: 20px;
     font-size: 1em;
@@ -45,15 +46,17 @@ input[type="number"] {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    ;
 }
 
 select {
     width: 45%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 3px solid #f30303;
     border-radius: 5px;
     font-size: 1em;
     cursor: pointer;
+    background-color: #e4dede;
 }
 
 .result {
@@ -144,7 +147,7 @@ select {
 
 @keyframes glow {
     0% {
-        box-shadow: 0 0 20px #f50505;
+        box-shadow: 0 0 20px #f5f5f4;
     }
     100% {
         box-shadow: 0 0 80px #f50505;
