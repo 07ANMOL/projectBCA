@@ -19,11 +19,37 @@
         }
 
         .header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: red;
+        width: 100%;
+        margin: 0 auto; 
+        height: 50px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .header h1 {
+        display: flex;
+        align-items: center;
+    }
+
+    .header h1 section {
+        margin: 0 10 px;
+
+    }
+
+    body {
+        padding-top: 60px; 
+        padding-bottom: 40px;
+    }
+
+        
 
         .footer {
             position: fixed;
@@ -46,9 +72,53 @@
             padding-top: 60px; 
             padding-bottom: 40px;
         }
+
+        
+        @media (max-width: 768px) {
+            .box {
+                width: 80%;
+                margin-left: 10%;
+            }
+
+            .buttons {
+                flex-direction: column;
+            }
+
+            select {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                flex-direction: column;
+                height: auto;
+                padding: 20px 0;
+            }
+
+            .header h1 {
+                font-size: 1.5em;
+            }
+
+            .box {
+                width: 90%;
+                margin-left: 5%;
+            }
+
+            .list {
+                max-width: 100%;
+            }
+        }
+       
     </style>
 </head>
 <body>
+    <header class="header">
+        <h1><section id="one">&#177; </section>Crypto Currency Converter<section id="one"> &#177;</section> </h1>
+        <nav></nav>
+
+    </header>
     <div class = "list">
         <ul>
             <li>1 USD = 87 INR</li>
